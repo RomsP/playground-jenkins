@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 # The Docker image below has the latest Jenkins image and the Terraform, Vault, and Ansible versions are found in the Dockerfile in this directory.
-docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 samgabrail/jenkins-tf-vault-ansible:latest
+docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 mon_image
 echo "✅ Go to the Ports tab where you will find the link to access the Jenkins UI on port 8080"
 echo "...Retrieving your initial admin password"
 sleep 15
